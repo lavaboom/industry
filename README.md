@@ -1,9 +1,9 @@
-# inStock
+# Our industry project 
 
 See below for current structure of the boilerplate code.
 
 ## Sample data
-The sample data is `items.json`.
+Sample data file is `items.json`.
 
 ## Backend
 File `ItemRoutes.js` contains all 5 sample routes: 
@@ -14,4 +14,4 @@ File `ItemRoutes.js` contains all 5 sample routes:
 - DELETE (single item)
 
 ## Frontend
-React Router set up to use HomePage ('/) and the sample ItemDetails ('/item/:id') page.
+React Router set up to use HomePage (`'/'`) and the sample ItemDetails (`'/item/:id'`) page.
