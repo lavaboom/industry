@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Titillium Web';
+    src: url(../../assets/Fonts/TitilliumWeb-Regular.ttf) format("truetype"),
+         url(../../assets/Fonts/TitilliumWeb-Regular.otf) format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Titillium Web';
+    src: url(../../assets/Fonts/TitilliumWeb-SemiBold.ttf) format("truetype"),
+         url(../../assets/Fonts/TitilliumWeb-SemiBold.otf) format("opentype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+body{
+    font-family: 'Titillium Web';
+}

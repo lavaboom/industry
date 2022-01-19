@@ -1,0 +1,14 @@
+@use './styles/partials/fonts' as *;
+@use './styles/partials/mixins' as *;
+@use './styles/partials/variables' as *;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: $color-background-2;
+}
