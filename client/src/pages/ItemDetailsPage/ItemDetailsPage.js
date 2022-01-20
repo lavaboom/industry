@@ -11,8 +11,6 @@ export default class ItemDetailsPage extends Component {
     // static variables 
     apiURL = process.env.REACT_APP_API_URL || 'http://localhost:8080'
 
-    temp = process.env.REACT_APP_API_URL
-
     state = {
         item: {},
         isLoading: true
