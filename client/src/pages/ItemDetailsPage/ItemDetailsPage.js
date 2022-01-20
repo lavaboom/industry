@@ -9,7 +9,9 @@ import axios from 'axios'
 export default class ItemDetailsPage extends Component {
 
     // static variables 
-    apiURL = process.env.BACKEND_API_URL || 'http://localhost:8080'
+    apiURL = process.env.REACT_APP_API_URL || 'http://localhost:8080'
+
+    temp = process.env.REACT_APP_API_URL
 
     state = {
         item: {},
