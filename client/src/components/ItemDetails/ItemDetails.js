@@ -4,7 +4,6 @@ import React from 'react'
 import './ItemDetails.scss'
 
 export default function ItemDetails({ item }) {
-    console.log(item)
     return (
         <div>
             <div>{ item.content }</div>

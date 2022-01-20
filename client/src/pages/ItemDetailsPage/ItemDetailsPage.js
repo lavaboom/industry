@@ -8,6 +8,9 @@ import axios from 'axios'
 
 export default class ItemDetailsPage extends Component {
 
+    // static variables 
+    apiURL = process.env.BACKEND_API_URL || 'http://localhost:8080'
+
     state = {
         item: {},
         isLoading: true
@@ -15,7 +18,7 @@ export default class ItemDetailsPage extends Component {
 
     componentDidMount = () => {
         const id = this.props.match.params.id;
-        axios.get(`http://localhost:8080/item/${id}`)
+        axios.get(`${this.apiURL}/item/${id}`)
             .then(response => {
                 this.setState({
                     item: response.data,

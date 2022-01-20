@@ -40,7 +40,7 @@ router.get('/', async (req,res) => {
 
 // GET a single item
 router.get('/:id', async (req,res) => {
-    console.log('Item Requested')
+    console.log(`Requesting item ${req.params.id}`)
     const items = await readItem();
     const requestedItem = items.find((data)=> {
         return data.id === req.params.id
