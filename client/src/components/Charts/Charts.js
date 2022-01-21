@@ -46,7 +46,7 @@ export default function Charts({ precentage, metric, title, btnText, chartColor 
     const options = {
         plugins: {
             title: {
-                display: true,
+                display: false,
                 text: 'Custom Chart Title'
             }
         },
