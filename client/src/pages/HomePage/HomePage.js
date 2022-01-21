@@ -2,12 +2,15 @@
 import React, { Component } from 'react'
 // app styles & assets
 import './HomePage.scss'
+// other sub components
+import NavBarBottom from '../../components/NavBarBottom/NavBarBottom'
 
 export default class HomePage extends Component {
     render() {
         return (
             <div>
                 <p>This is Home Page</p>
+                <NavBarBottom />
             </div>
         )
     }
