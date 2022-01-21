@@ -19,11 +19,12 @@ const data = {
   };
   const options = {
  
-    plugins:{legend: {
-      display: false,
-          labels: {
-              display: false
-          }
+    plugins:{
+      legend:{
+        display: false,
+            labels: {
+                display: false
+            }
       }},
       scales: {
         y: {
@@ -31,6 +32,7 @@ const data = {
             min: 0,
             ticks: {
                 stepSize: 33,
+                fontColor: [colors.green,colors.yellow,colors.red],
                 callback: function(value, index, values) {
                     return Math.floor(value) + '%';
                 }
