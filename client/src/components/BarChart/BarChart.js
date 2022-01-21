@@ -25,10 +25,18 @@ const data = {
               display: false
           }
       }},
+      scales: {
+        y: {
+            ticks: {
+                callback: function(value, index, values) {
+                    return value + '%';
+                }
+            }
+        },
     
    
-    barThickness:16,
-  }
+    barThickness:2,
+  }}
 
 export default function BarChart() {
   return <div className="bar-chart">
