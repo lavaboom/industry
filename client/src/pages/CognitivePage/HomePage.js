@@ -49,7 +49,7 @@ export default class HomePage extends
 
                     <div className={`tip ${activeView === 2 ? "show" : ""}`}>
                         <Card bar={true} icon={logo}
-                            content="Your HRV of 110 ms is 11.7% higher than your recent average. Your body is primed to take on Strain today." />
+                            content="During this 7-day period, your average Stress (10) was lower than its prior 30-day average (11)." />
                         <BarChartCognitive array={50} />
                     </div>
 
