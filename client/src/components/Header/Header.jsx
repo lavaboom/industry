@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Button from "../Button/Button";
+import Button from "../Buttons/Button";
 
 // app styles & assets
 import "./Header.scss";

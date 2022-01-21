@@ -5,7 +5,7 @@ import './HomePage.scss'
 import iconCoach from '../../assets/Icons/coach.svg'
 // other sub components
 import Card from '../../components/Card/Card'
-import Button from "../../components/Button/Button"
+import Button from "../../components/Buttons/Button"
 
 export default class HomePage extends Component {
     render() {
