@@ -10,7 +10,13 @@
 
 body {
 	margin: 0;
-	background: linear-gradient(#0d0f15, $dark-black, $dark-black, $neutral-blue)
+	background: linear-gradient(
+			#000,
+			#0d0f15,
+			$dark-black,
+			$dark-black,
+			$neutral-blue
+		)
 		no-repeat;
 	height: 100%;
 	font-family: "Lato", monospace;

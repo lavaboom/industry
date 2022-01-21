@@ -7,6 +7,7 @@ import logo from '../../assets/Icons/logo.svg';
 
 // other sub components
 import Card from '../../components/Card/Card';
+import BarChart from "../../components/BarChart/BarChart";
 
 export default class HomePage extends Component {
     render() {
@@ -17,6 +18,8 @@ export default class HomePage extends Component {
                     header='MODERATE FUNCTION'
                     content='Your Cognitive Function is 10% lower than average due to high stress levels. Try to get 1 extra hour of sleep tonight. '
                 />
+                <BarChart />
+
             </div>
         )
     }

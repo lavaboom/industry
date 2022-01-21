@@ -9,6 +9,8 @@
 	display: flex;
 	flex-direction: column;
 	position: fixed;
+	background-color: #000;
+	z-index: 1;
 
 	&__phone-icons {
 		margin-left: -1rem;
@@ -94,8 +96,9 @@
 		&__item {
 			color: $light-grey;
 			font-size: 0.75rem;
-			padding-bottom: 0.5rem;
+			padding-bottom: 0.3rem;
 			text-decoration: none;
+
 			&.active {
 				color: $white;
 				border-bottom: 2px solid white;

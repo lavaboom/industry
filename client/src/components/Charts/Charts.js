@@ -47,7 +47,6 @@ export default function Charts({ precentage, metric, title, btnText, chartColor 
         plugins: {
             title: {
                 display: true,
-                text: 'Custom Chart Title'
             }
         },
         cutout: '80%',
