@@ -1,0 +1,11 @@
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.placeholder {
+	border: 1px solid white;
+	padding: 5rem 1rem;
+	margin: 1rem;
+	color: white;
+	text-align: center;
+}
