@@ -1,18 +1,28 @@
 // React modules
 import React, { Component } from 'react'
+import Charts from '../../components/Charts/Charts'
 // app styles & assets
 import './HomePage.scss'
+import logo from '../../assets/Icons/logo.svg';
+
 // other sub components
 import NavBarBottom from '../../components/NavBarBottom/NavBarBottom'
 import BarChart from '../../components/BarChart/BarChart'
+import Card from '../../components/Card/Card'
 
 export default class HomePage extends Component {
     render() {
         return (
-            <div>
+            <div className='home-page'>
                 <p>This is Home Page</p>
                 <BarChart />
                 <NavBarBottom />
+            
+                <Charts metric="7.1" title="DAY STRAIN" btnText="No Activities" chartColor="#0072BC" />
+                <Card icon={logo}
+                    header='LIGHT EXERTION'
+                    content='Strain between 6 and 9.9 is considered light. Your accumulated cardiovascular load is low.'
+                />
             </div>
         )
     }

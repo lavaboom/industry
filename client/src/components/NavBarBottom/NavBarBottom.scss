@@ -1,19 +1,37 @@
-@use '../../styles/partials/fonts' as *;
-@use '../../styles/partials/mixins' as *;
-@use '../../styles/partials/variables';
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
 
 .nav-bar-bottom {
-    position: absolute;
-    bottom: 0;
-    padding: 1rem;
-    width: 100%;
-    height: 9%;
-    background-color: variables.$color-background-1;
-    display: flex;
-    justify-content: space-between;
-    
-    &__item {
-        filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(345deg)
-                brightness(200%) contrast(101%);
-    }
+	position: fixed;
+	bottom: 0;
+	padding: 0.3rem 1rem 0;
+	width: 100%;
+	height: 4rem;
+	background-color: $dark-black;
+	display: flex;
+	justify-content: space-around;
+
+	&__item {
+		border-radius: 5px;
+		width: 3.5rem;
+		height: 2rem;
+		padding-top: 0.5rem;
+		display: grid;
+		place-items: center;
+		&--active {
+			margin-top: -0.8rem;
+			background-color: $dark-black;
+		}
+
+		&-icon {
+			filter: invert(78%) sepia(0%) saturate(973%) hue-rotate(270deg)
+				brightness(90%) contrast(94%);
+
+			&--active {
+				filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(345deg)
+					brightness(200%) contrast(101%);
+			}
+		}
+	}
 }
