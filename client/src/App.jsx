@@ -5,15 +5,15 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import './App.scss';
 // sub components
 import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer'
+import NavBarBottom from './components/NavBarBottom/NavBarBottom';
+
 // pages
 import HomePage from './pages/HomePage/HomePage'
 import ItemDetailsPage from './pages/ItemDetailsPage/ItemDetailsPage'
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
+    <BrowserRouter>
       <Header />
       <div>
         <Switch>
@@ -21,9 +21,8 @@ function App() {
           <Route path='/item/:id' exact render={(props) => <ItemDetailsPage {...props} />} />
         </Switch>
       </div>
-        <Footer />
-      </BrowserRouter>
-    </div>
+      <NavBarBottom />
+    </BrowserRouter>
   );
 }
 
