@@ -1,32 +1,51 @@
-@use '../../styles/partials/fonts' as *;
-@use '../../styles/partials/mixins' as *;
-@use '../../styles/partials/variables';
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
 
 .card {
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1.5rem;
-    border-radius: 5px;
-    background-color: rgb(35, 35, 63);
-    margin: 1rem;
+	position: relative;
+	overflow: hidden;
+	width: 90%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 1.5rem;
+	border-radius: 5px;
+	background: linear-gradient($dark-black, transparent);
+	margin: 1rem;
+	box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.2);
 
-    &-header {
-        width: 100%;
-        display: flex;
-        margin-bottom: 1rem;
-        &__icon {
-            filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(345deg)
-                brightness(200%) contrast(101%);
-            vertical-align: middle;
-        }
-        &__text {
-            color: white;
-            margin-left: 1rem;
-        }
-    }
-    &-content {
-        color: white;
-        font-size: 0.8rem;
-    }
+	&-header {
+		width: 100%;
+		display: flex;
+		margin-bottom: 1rem;
+		&__icon {
+			filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(345deg)
+				brightness(200%) contrast(101%);
+		}
+		&__text {
+			color: white;
+			margin-left: 1rem;
+		}
+	}
+	&-content {
+		color: $light-grey;
+		font-size: 0.8rem;
+	}
+
+	&__triangle {
+		position: absolute;
+		right: -1.5rem;
+		top: -0.5rem;
+		background-color: #45484f;
+		transform: rotate(45deg);
+		width: 4rem;
+		height: 2rem;
+
+		&__icon {
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 1.5rem;
+		}
+	}
 }
