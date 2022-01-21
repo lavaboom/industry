@@ -36,10 +36,10 @@ export default class Header extends Component {
 					<ul className="header-nav__menu">
 						<li className="header-nav__item">OVERVIEW</li>
 						<li className="header-nav__item header-nav__item--selected">
-							STRAIN
+							RECOVERY
 						</li>
-						<li className="header-nav__item">RECOVERY</li>
-						<li className="header-nav__item">SLEEP</li>
+						<li className="header-nav__item">COGNITIVE</li>
+						<li className="header-nav__item">STRAIN</li>
 					</ul>
 				</div>
 			</header>
