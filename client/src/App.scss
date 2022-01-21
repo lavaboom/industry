@@ -12,6 +12,13 @@
 
 body {
 	margin: 0;
+	background-color: #f3f3f3;
+	height: 100%;
+	font-family: "Lato", monospace;
+}
+
+.mobile {
+	width: 375px;
 	background: linear-gradient(
 			#000,
 			#0d0f15,
@@ -19,9 +26,8 @@ body {
 			$neutral-blue,
 			$dark-black,
 			$dark-black,
-			$dark-black
+			#000
 		)
 		no-repeat;
-	height: 100%;
-	font-family: "Lato", monospace;
+	margin: auto;
 }

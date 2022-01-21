@@ -16,20 +16,20 @@ import OverviewPage from "./pages/OverviewPage/OverviewPage";
 
 function App() {
 	return (
-		<BrowserRouter>
-			<Header />
-			<div>
+		<div className="mobile">
+			<BrowserRouter>
+				<Header />
 				<Switch>
 					<Route path="/" exact component={HomePage} />
 					<Route path="/cognitive" exact component={CognitivePage} />
 					<Route path="/recovery" exact component={RecoveryPage} />
 					<Route path="/overview" exact component={OverviewPage} />
-					
+
 					{/* <Route path='/item/:id' exact render={(props) => <ItemDetailsPage {...props} />} /> */}
 				</Switch>
-			</div>
-			<NavBarBottom />
-		</BrowserRouter>
+				<NavBarBottom />
+			</BrowserRouter>
+		</div>
 	);
 }
 
