@@ -1,5 +1,28 @@
+@use "../../styles/partials/variables" as*;
+
 .bar-chart {
     border-left: solid 2px linear-gradient(to bottom, red 50%, green 50%);
+    position: relative;
     // background-image: linear-gradient(to right, red 50%, green 50%);
     
+}
+.border-yellow {
+    height: 3rem;
+    width: 20rem;
+    position: absolute;
+    border-left:solid 2px $color-barchart-yellow;
+    top: 33%;
+}
+.border-green {
+    height: 3rem;
+    width: 20rem;
+    position: absolute;
+    border-left:solid 2px $color-barchart-green;
+}
+.border-red {
+    height: 3rem;
+    width: 20rem;
+    position: absolute;
+    border-left:solid 2px $color-barchart-red;
+    top: 66%;
 }
