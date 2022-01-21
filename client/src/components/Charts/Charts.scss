@@ -1,40 +1,48 @@
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
 .doughnut {
 	width: 300px;
-	margin: -3rem auto 0;
+	margin: 0 auto;
 
 	&__container {
 		position: relative;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		margin: 1rem;
+		color: white;
+		text-align: center;
 	}
 
 	&__info-container {
-		margin-top: -2.5rem;
 		position: absolute;
 		display: flex;
 		flex-direction: column;
-		gap: 3rem;
+		justify-content: center;
+		align-items: center;
 	}
 
 	&__info-title {
-		margin: 0;
+		margin: 0 1rem;
 		font-size: 20px;
 		line-height: 20px;
+		margin-bottom: 2rem;
 	}
 
 	&__info-metric {
 		margin: 0;
 		font-size: 91px;
 		line-height: 20px;
+		margin-bottom: 3rem;
 	}
+
 	&__icon-container {
 		width: 0.3rem;
 	}
+
 	&__icon {
-		position: absolute;
-		right: -0.5rem;
-		top: 0;
 		width: 0.5rem;
 		height: 0.5rem;
 		border-radius: 50%;
@@ -45,5 +53,9 @@
 		align-items: center;
 		border: 1px solid;
 		color: grey;
+	}
+
+	&__title-container {
+		display: flex;
 	}
 }

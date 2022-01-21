@@ -9,6 +9,8 @@ import NavBarBottom from "./components/NavBarBottom/NavBarBottom";
 
 // pages
 import HomePage from "./pages/HomePage/HomePage";
+import CognitivePage from "./pages/CognitivePage/HomePage";
+import RecoveryPage from "./pages/RecoveryPage/HomePage";
 import ItemDetailsPage from "./pages/ItemDetailsPage/ItemDetailsPage";
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
 			<div>
 				<Switch>
 					<Route path="/" exact component={HomePage} />
+					<Route path="/cognitive" exact component={CognitivePage} />
+					<Route path="/recovery" exact component={RecoveryPage} />
 					{/* <Route path='/item/:id' exact render={(props) => <ItemDetailsPage {...props} />} /> */}
 				</Switch>
 			</div>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Button from "../Buttons/Button";
 
 // app styles & assets
@@ -9,11 +9,24 @@ import iconMenu from "../../assets/Icons/menu.svg";
 import iconChevronDown from "../../assets/Icons/chevron-down.svg";
 
 export default class Header extends Component {
+	state = {
+		activeView: 4,
+	};
+
 	onBtnClick() {
 		console.warn("Whoop there it is");
 	}
 
+	switchView = (view) => {
+		console.log(view);
+		this.setState({
+			activeView: view,
+		});
+	};
+
 	render() {
+		const { activeView } = this.state;
+
 		return (
 			<header className="header">
 				<div className="header-buttons">
@@ -34,12 +47,18 @@ export default class Header extends Component {
 				</div>
 				<div className="header-nav">
 					<ul className="header-nav__menu">
-						<li className="header-nav__item">OVERVIEW</li>
-						<li className="header-nav__item header-nav__item--selected">
+						<NavLink className="header-nav__item" to="/overview">
+							OVERVIEW
+						</NavLink>
+						<NavLink className="header-nav__item" to="/recovery">
 							RECOVERY
-						</li>
-						<li className="header-nav__item">COGNITIVE</li>
-						<li className="header-nav__item">STRAIN</li>
+						</NavLink>
+						<NavLink className="header-nav__item" to="/cognitive">
+							COGNITIVE
+						</NavLink>
+						<NavLink className="header-nav__item" exact to="/">
+							STRAIN
+						</NavLink>
 					</ul>
 				</div>
 			</header>

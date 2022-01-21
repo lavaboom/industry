@@ -3,8 +3,7 @@ import React, { Component } from 'react'
 import Charts from '../../components/Charts/Charts'
 // app styles & assets
 import './HomePage.scss'
-import logo from '../../assets/Icons/logo.svg';
-
+import logo from '../../assets/Icons/logo.svg'
 // other sub components
 import Card from '../../components/Card/Card'
 
@@ -12,10 +11,10 @@ export default class HomePage extends Component {
     render() {
         return (
             <div className='home-page'>
-                <Charts metric="7.1" title="DAY STRAIN" btnText="No Activities" chartColor="#0072BC" />
+                <Charts metric="89" title="RECOVERY" chartColor={"#28FF0A"} precentage={true} />
                 <Card icon={logo}
-                    header='LIGHT EXERTION'
-                    content='Strain between 6 and 9.9 is considered light. Your accumulated cardiovascular load is low.'
+                    header='ELEVATED RECOVERY'
+                    content='Your HRV of 110 ms is 11.7% higher than your recent average. Your body is primed to take on Strain today.'
                 />
             </div>
         )
