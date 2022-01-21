@@ -6,12 +6,22 @@ import hide from '../../assets/Icons/hide.svg';
 
 
 export default class Card extends Component {
+  state = {
+    animation: false
+  }
+
+  disapear = () => {
+    this.setState({
+      animation: true
+    })
+  }
+
   render() {
     return (
 
       <>
-        {!this.props.bar ? <div className='card'>
-          <div className="card__triangle">
+        {!this.props.bar ? <div className='card' onClick={this.disapear}>
+          <div className={`card__triangle ${this.state.animation ? "animation" : ""}`} >
           </div>
           <img src={hide} alt="icon" className="card__triangle__icon" />
 

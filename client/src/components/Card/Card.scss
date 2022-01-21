@@ -1,6 +1,19 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
 
+@keyframes widthin {
+	from {
+		width: 100%;
+	}
+	to {
+		width: 0%;
+	}
+}
+
+.animation {
+	animation: widthin 1s linear;
+}
+
 .card {
 	position: relative;
 	overflow: hidden;
