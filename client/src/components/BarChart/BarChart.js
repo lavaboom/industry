@@ -43,9 +43,11 @@ const data = {
 
 export default function BarChart() {
   return <div className="bar-chart">
-      <div className='border-green'></div>
-      <div className='border-yellow'></div>
-      <div className='border-red'></div>
+      <div className='border'>
+        <div className='border-green'></div>
+        <div className='border-yellow'></div>
+        <div className='border-red'></div>
+      </div>
       <Bar
           data={data}
           options={options}
