@@ -1,0 +1,46 @@
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+
+.panel {
+    width: 90%;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+
+    &-card {
+        width: 33%;
+        margin: 0;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-background-1;
+        border-top: 2px solid $color-background-1;
+
+        &--selected {
+            background-color: $color-secondary-1;
+            border-top: 2px solid white;
+
+        }
+
+        &__icon {
+            filter: invert(78%) sepia(0%) saturate(973%) hue-rotate(270deg)
+				brightness(90%) contrast(94%);
+            max-width: 2rem;
+            height: auto;
+        }
+        &__desc {
+            text-align: center;
+        }
+        &__metric {
+            text-align: center;
+        }
+        &__subtext {
+            font-size: 0.5rem;
+        }
+    }
+}
