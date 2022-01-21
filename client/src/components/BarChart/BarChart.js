@@ -19,6 +19,12 @@ const data = {
   };
   const options = {
  
+    plugins:{legend: {
+      display: false,
+          labels: {
+              display: false
+          }
+      }},
     
    
     barThickness:16,
