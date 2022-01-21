@@ -6,6 +6,7 @@ import './HomePage.scss'
 import logo from '../../assets/Icons/logo.svg';
 
 // other sub components
+
 import Card from '../../components/Card/Card'
 import MetricsPanel from '../../components/MetricsPanel/MetricsPanel'
 
