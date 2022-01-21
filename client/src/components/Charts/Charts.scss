@@ -1,16 +1,22 @@
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
 .doughnut {
 	width: 300px;
-	margin: -3rem auto 0;
+	margin: 0 auto;
 
 	&__container {
 		position: relative;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		margin: 1rem;
+		color: white;
+		text-align: center;
 	}
 
 	&__info-container {
-		margin-top: -2.5rem;
 		position: absolute;
 		display: flex;
 		flex-direction: column;

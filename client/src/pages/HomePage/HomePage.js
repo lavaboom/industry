@@ -11,9 +11,7 @@ export default class HomePage extends Component {
     render() {
         return (
             <div className='home-page'>
-                <div className='placeholder'>
-                    <Charts metric="7.1" title="DAY STRAIN" btnText="No Activities" />
-                </div>
+                <Charts metric="7.1" title="DAY STRAIN" btnText="No Activities" />
                 <Card icon={iconCoach}
                     header='LIGHT EXERTION'
                     content='Strain between 6 and 9.9 is considered light. Your accumulated cardiovascular load is low.'
