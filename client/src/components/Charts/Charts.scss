@@ -1,4 +1,49 @@
 .doughnut {
-    height: 10rem;
-    width: 10rem;
+	width: 300px;
+	margin: -3rem auto 0;
+
+	&__container {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__info-container {
+		margin-top: -2.5rem;
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	&__info-title {
+		margin: 0;
+		font-size: 20px;
+		line-height: 20px;
+	}
+
+	&__info-metric {
+		margin: 0;
+		font-size: 91px;
+		line-height: 20px;
+	}
+	&__icon-container {
+		width: 0.3rem;
+	}
+	&__icon {
+		position: absolute;
+		right: -0.5rem;
+		top: 0;
+		width: 0.5rem;
+		height: 0.5rem;
+		border-radius: 50%;
+		padding: 0.25rem;
+		font-size: 0.5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid;
+		color: grey;
+	}
 }

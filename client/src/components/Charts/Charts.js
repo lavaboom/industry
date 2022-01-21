@@ -2,13 +2,18 @@ import React, { Component } from 'react';
 import { Doughnut } from 'react-chartjs-2';
 import "./Charts.scss";
 import { Chart, ArcElement } from 'chart.js'
+import Button from "../Buttons/Button";
+import temp from '../../assets/Icons/chevron-down.svg';
+;
+
 // import ChartDataLabels from 'chartjs-plugin-datalabels';
 Chart.register(ArcElement);
 // Chart.register(ChartDataLabels);
 
 
-export default function Charts() {
+export default function Charts({ metric, title, btnText }) {
     const plugins = [{
+        id: '79%',
         beforeDraw: function (chart) {
             let width = chart.width,
                 height = chart.height,
@@ -17,15 +22,13 @@ export default function Charts() {
             let fontSize = (height / 160).toFixed(2);
             ctx.font = fontSize + "em sans-serif";
             ctx.textBaseline = "top";
-            let text = "Recovery",
+            let text = "",
                 textX = Math.round((width - ctx.measureText(text).width) / 2),
                 textY = height / 2;
 
-            // let text2 = "75%",
-            //     textX2 = Math.round((width - ctx.measureText(text).width) / 2),
-            //     textY2 = height / 2;
+
             ctx.fillText(text, textX, textY);
-            // ctx.fillText(text2, textX2, textY2);
+
             ctx.save();
         }
     }]
@@ -33,8 +36,8 @@ export default function Charts() {
         datasets: [
             {
                 data: [75, 25],
-                borderColor: ['rgba(255,206,86,0.2)'],
-                backgroundColor: ['rgba(82,157,242,1)', 'rgba(75, 78, 83,1)'],
+                borderColor: ['rgba(0,0,0,0)'],
+                backgroundColor: ['#0072BC', '#2E3B45'],
             }
         ],
         text: 'day strain',
@@ -49,7 +52,19 @@ export default function Charts() {
         cutout: '80%',
     }
 
-    return <div className='doughnut'>
-        <Doughnut data={data} options={options} plugins={plugins} />
-    </div>;
+    return (
+        <section className="doughnut__container">
+            <div className='doughnut'>
+                <Doughnut data={data} options={options} plugins={plugins} />
+            </div>
+            <div className="doughnut__info-container">
+                <div>
+                    <p className="doughnut__info-title">{title}</p>
+                    <Button containerStyle="doughnut__icon-container" btnStyle="doughnut__icon" text="?" />
+                </div>
+                <p className="doughnut__info-metric">{metric}</p>
+                <Button text={btnText} btnStyle={"inactive"} />
+            </div>
+        </section>
+    );
 }

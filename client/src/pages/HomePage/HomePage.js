@@ -13,7 +13,7 @@ export default class HomePage extends Component {
         return (
             <div className='home-page'>
                 <div className='placeholder'>
-                    <Button text="No Activities" btnStyle={"inactive"} />
+                    <Charts metric="7.1" title="DAY STRAIN" btnText="No Activities" />
                 </div>
                 <Card icon={iconCoach}
                     header='LIGHT EXERTION'
