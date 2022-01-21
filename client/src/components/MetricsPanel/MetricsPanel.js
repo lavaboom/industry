@@ -50,6 +50,7 @@ export default class MetricsPanel extends Component {
         <div className="pannel-average">
           7-Day Average
         </div>
+
       </div>
     );
   }
