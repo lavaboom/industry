@@ -27,9 +27,12 @@ const data = {
       }},
       scales: {
         y: {
+            max : 100,
+            min: 0,
             ticks: {
+                stepSize: 33,
                 callback: function(value, index, values) {
-                    return value + '%';
+                    return Math.round(value) + '%';
                 }
             }
         },
