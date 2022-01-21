@@ -5,6 +5,7 @@
 	width: 90%;
 	margin: 1rem;
 	display: flex;
+    flex-wrap: wrap;
 	justify-content: space-between;
 	background-color: black;
 	margin-bottom: 8rem;
@@ -32,14 +33,31 @@
 			max-width: 2rem;
 			height: auto;
 		}
-		&__desc {
+		
+        &__desc {
+			text-align: center;
+            margin: 0.5rem 0;
+		}
+		
+        &__metric {
 			text-align: center;
 		}
-		&__metric {
-			text-align: center;
-		}
-		&__subtext {
+		
+        &__subtext {
 			font-size: 0.5rem;
 		}
+
+        &__bottom-desc {
+            padding-top: 0.8rem;
+            width: 100%;
+            color: white;
+            text-align: center;
+            background-color: #0d0f15;
+        }
+
+        &__bottom-text {
+            margin-top: -1rem;
+            padding: 0 2rem;
+        }
 	}
 }
