@@ -13,7 +13,6 @@ import { NavLink } from 'react-router-dom';
 
 export default function NavBarBottom() {
 
-
     return (
         <div className='nav-bar-bottom'>
             <div className='nav-bar-bottom__item nav-bar-bottom__item--active'>
