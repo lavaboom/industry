@@ -32,7 +32,7 @@ const data = {
             ticks: {
                 stepSize: 33,
                 callback: function(value, index, values) {
-                    return Math.round(value) + '%';
+                    return Math.floor(value) + '%';
                 }
             }
         },
