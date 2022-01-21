@@ -9,11 +9,24 @@ import iconMenu from "../../assets/Icons/menu.svg";
 import iconChevronDown from "../../assets/Icons/chevron-down.svg";
 
 export default class Header extends Component {
+	state = {
+		activeView: 4,
+	};
+
 	onBtnClick() {
 		console.warn("Whoop there it is");
 	}
 
+	switchView = (view) => {
+		console.log(view);
+		this.setState({
+			activeView: view,
+		});
+	};
+
 	render() {
+		const { activeView } = this.state;
+
 		return (
 			<header className="header">
 				<div className="header-buttons">
@@ -34,12 +47,41 @@ export default class Header extends Component {
 				</div>
 				<div className="header-nav">
 					<ul className="header-nav__menu">
-						<li className="header-nav__item">OVERVIEW</li>
-						<li className="header-nav__item header-nav__item--selected">
+						<li
+							className={`header-nav__item  ${
+								activeView === 1 ? "header-nav__item--active" : ""
+							}`}
+							onClick={() => this.switchView(1)}
+						>
+							OVERVIEW
+						</li>
+
+						<li
+							className={`header-nav__item  ${
+								activeView === 2 ? "header-nav__item--active" : ""
+							}`}
+							onClick={() => this.switchView(2)}
+						>
 							RECOVERY
 						</li>
-						<li className="header-nav__item">COGNITIVE</li>
-						<li className="header-nav__item">STRAIN</li>
+
+						<li
+							className={`header-nav__item  ${
+								activeView === 3 ? "header-nav__item--active" : ""
+							}`}
+							onClick={() => this.switchView(3)}
+						>
+							COGNITIVE
+						</li>
+
+						<li
+							className={`header-nav__item  ${
+								activeView === 4 ? "header-nav__item--active" : ""
+							}`}
+							onClick={() => this.switchView(4)}
+						>
+							STRAIN
+						</li>
 					</ul>
 				</div>
 			</header>
