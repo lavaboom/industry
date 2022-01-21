@@ -28,7 +28,7 @@ export default class MetricsPanel extends Component {
         >
           <img className='panel-card__icon' src={iconBrain} alt='function' />
           <div className='panel-card__desc'>FUNCTION</div>
-          <div className='panel-card__metric'>74%</div>
+          <div className='panel-card__metric'>75%</div>
         </div>
         <div
           className={`panel-card ${this.state.activeButton === 2 ? 'panel-card--selected' : ''}`}
@@ -36,7 +36,7 @@ export default class MetricsPanel extends Component {
         >
           <img className='panel-card__icon' src={iconStress} alt='stress' />
           <div className='panel-card__desc'>STRESS</div>
-          <div className='panel-card__metric'>16</div>
+          <div className='panel-card__metric'>10</div>
         </div>
         <div
           className={`panel-card ${this.state.activeButton === 3 ? 'panel-card--selected' : ''}`}
@@ -44,7 +44,7 @@ export default class MetricsPanel extends Component {
         >
           <img className='panel-card__icon' src={iconSleep} alt='sleep' />
           <div className='panel-card__desc'>SLEEP</div>
-          <div className='panel-card__metric'>8 <span className='panel-card__subtext'>hours</span></div>
+          <div className='panel-card__metric'>7<span className='panel-card__subtext'>hours</span></div>
         </div>
       </div>
     );
