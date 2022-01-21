@@ -63,7 +63,7 @@ export default function Charts({ precentage, metric, title, btnText, chartColor 
                     <p className="doughnut__info-title">{title}</p>
                     <Button containerStyle="doughnut__icon-container" btnStyle="doughnut__icon" text="?" />
                 </div>
-                <p className="doughnut__info-metric">{metric}{precentage ? "%" : ""}</p>
+                <p className="doughnut__info-metric">{metric}<span className="doughnut__info-precent">{precentage ? "%" : ""}</span></p>
                 {btnText ? <Button text={btnText} btnStyle={"inactive"} /> : ""}
             </div>
         </section>

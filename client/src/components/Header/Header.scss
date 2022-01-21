@@ -1,15 +1,35 @@
-@use "../../styles/partials/fonts" as *;
 @use "../../styles/partials/mixins" as *;
-@use "../../styles/partials/variables";
+@use "../../styles/partials/variables" as *;
 
 .header {
 	padding: 1rem;
 	width: 100%;
-	height: 18%;
+	height: 112px;
 	max-height: 7rem;
-	background-color: variables.$dark-black;
 	display: flex;
 	flex-direction: column;
+	position: fixed;
+
+	&__phone-icons {
+		margin-left: -1rem;
+		margin-top: -2rem;
+		padding: 0.3rem 1rem;
+		width: 100vw;
+		display: flex;
+		color: white;
+		justify-content: space-between;
+		align-items: center;
+		background: transparent;
+	}
+
+	&__phone-svgs {
+		display: flex;
+		width: 4rem;
+		justify-content: space-between;
+		img {
+			width: 1rem;
+		}
+	}
 
 	&-buttons {
 		width: 100%;
@@ -21,16 +41,42 @@
 			filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(345deg)
 				brightness(200%) contrast(101%);
 			vertical-align: middle;
+
+			&-long {
+				width: 50%;
+				position: absolute;
+				background-color: #484a4e;
+				border-radius: 20px;
+				left: 50%;
+				transform: translateX(-50%);
+				display: flex;
+				justify-content: space-between;
+			}
+
+			&--center {
+				margin-bottom: 0.2rem;
+			}
+		}
+
+		&__icons {
+			padding: 0.3rem;
+			filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(345deg)
+				brightness(200%) contrast(101%);
 		}
 
 		&__dates {
 			color: white;
-			border: 1px solid white;
+			background-color: #484a4e;
+			border: 2px solid $dark-black;
 			border-radius: 20px;
 			padding: 0.3rem;
-			width: 40%;
+			width: 130px;
 			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			font-size: 0.75rem;
+			z-index: 1;
 		}
 	}
 
@@ -46,14 +92,30 @@
 		}
 
 		&__item {
-			color: variables.$light-grey;
+			color: $light-grey;
 			font-size: 0.75rem;
 			padding-bottom: 0.5rem;
 			text-decoration: none;
 			&.active {
-				color: variables.$white;
+				color: $white;
 				border-bottom: 2px solid white;
 			}
 		}
 	}
+}
+
+.profile-image {
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	overflow: hidden;
+	background: URL(../../assets/images/profile.jpeg) no-repeat center/cover;
+}
+
+.profile-image2 {
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	overflow: hidden;
+	background: grey;
 }

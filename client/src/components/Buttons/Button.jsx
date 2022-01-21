@@ -6,6 +6,7 @@ export default function Button({
 	onClick,
 	btnStyle,
 	containerStyle,
+	image,
 }) {
 	return (
 		<div

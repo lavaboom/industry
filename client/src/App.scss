@@ -1,4 +1,4 @@
-@use "./styles/partials/fonts" as *;
+@use "./styles/fonts";
 @use "./styles/partials/mixins" as *;
 @use "./styles/partials/variables" as *;
 
@@ -10,6 +10,8 @@
 
 body {
 	margin: 0;
-	background: linear-gradient($dark-black, $dark-black, $neutral-blue) no-repeat;
-	height: 100vh;
+	background: linear-gradient(#0d0f15, $dark-black, $dark-black, $neutral-blue)
+		no-repeat;
+	height: 100%;
+	font-family: "Lato", monospace;
 }
