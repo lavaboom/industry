@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Button from "../Buttons/Button";
 
 // app styles & assets
@@ -47,41 +47,18 @@ export default class Header extends Component {
 				</div>
 				<div className="header-nav">
 					<ul className="header-nav__menu">
-						<li
-							className={`header-nav__item  ${
-								activeView === 1 ? "header-nav__item--active" : ""
-							}`}
-							onClick={() => this.switchView(1)}
-						>
+						<NavLink className="header-nav__item" to="/overview">
 							OVERVIEW
-						</li>
-
-						<li
-							className={`header-nav__item  ${
-								activeView === 2 ? "header-nav__item--active" : ""
-							}`}
-							onClick={() => this.switchView(2)}
-						>
+						</NavLink>
+						<NavLink className="header-nav__item" to="/recovery">
 							RECOVERY
-						</li>
-
-						<li
-							className={`header-nav__item  ${
-								activeView === 3 ? "header-nav__item--active" : ""
-							}`}
-							onClick={() => this.switchView(3)}
-						>
+						</NavLink>
+						<NavLink className="header-nav__item" to="/cognitive">
 							COGNITIVE
-						</li>
-
-						<li
-							className={`header-nav__item  ${
-								activeView === 4 ? "header-nav__item--active" : ""
-							}`}
-							onClick={() => this.switchView(4)}
-						>
+						</NavLink>
+						<NavLink className="header-nav__item" exact to="/">
 							STRAIN
-						</li>
+						</NavLink>
 					</ul>
 				</div>
 			</header>

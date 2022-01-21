@@ -49,8 +49,8 @@
 			color: variables.$light-grey;
 			font-size: 0.75rem;
 			padding-bottom: 0.5rem;
-
-			&--active {
+			text-decoration: none;
+			&.active {
 				color: variables.$white;
 				border-bottom: 2px solid white;
 			}

@@ -11,7 +11,7 @@ Chart.register(ArcElement);
 // Chart.register(ChartDataLabels);
 
 
-export default function Charts({ metric, title, btnText }) {
+export default function Charts({ precentage, metric, title, btnText, chartColor }) {
     const plugins = [{
         id: '79%',
         beforeDraw: function (chart) {
@@ -33,11 +33,12 @@ export default function Charts({ metric, title, btnText }) {
         }
     }]
     const data = {
+
         datasets: [
             {
-                data: [75, 25],
+                data: [metric, 25],
                 borderColor: ['rgba(0,0,0,0)'],
-                backgroundColor: ['#0072BC', '#2E3B45'],
+                backgroundColor: [chartColor, '#2E3B45'],
             }
         ],
         text: 'day strain',
@@ -58,12 +59,12 @@ export default function Charts({ metric, title, btnText }) {
                 <Doughnut data={data} options={options} plugins={plugins} />
             </div>
             <div className="doughnut__info-container">
-                <div>
+                <div className="doughnut__title-container">
                     <p className="doughnut__info-title">{title}</p>
                     <Button containerStyle="doughnut__icon-container" btnStyle="doughnut__icon" text="?" />
                 </div>
-                <p className="doughnut__info-metric">{metric}</p>
-                <Button text={btnText} btnStyle={"inactive"} />
+                <p className="doughnut__info-metric">{metric}{precentage ? "%" : ""}</p>
+                {btnText ? <Button text={btnText} btnStyle={"inactive"} /> : ""}
             </div>
         </section>
     );

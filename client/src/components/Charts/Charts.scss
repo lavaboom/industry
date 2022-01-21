@@ -20,27 +20,29 @@
 		position: absolute;
 		display: flex;
 		flex-direction: column;
-		gap: 3rem;
+		justify-content: center;
+		align-items: center;
 	}
 
 	&__info-title {
-		margin: 0;
+		margin: 0 1rem;
 		font-size: 20px;
 		line-height: 20px;
+		margin-bottom: 2rem;
 	}
 
 	&__info-metric {
 		margin: 0;
 		font-size: 91px;
 		line-height: 20px;
+		margin-bottom: 3rem;
 	}
+
 	&__icon-container {
 		width: 0.3rem;
 	}
+
 	&__icon {
-		position: absolute;
-		right: -0.5rem;
-		top: 0;
 		width: 0.5rem;
 		height: 0.5rem;
 		border-radius: 50%;
@@ -51,5 +53,9 @@
 		align-items: center;
 		border: 1px solid;
 		color: grey;
+	}
+
+	&__title-container {
+		display: flex;
 	}
 }
