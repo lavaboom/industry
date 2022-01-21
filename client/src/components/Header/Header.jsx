@@ -12,9 +12,11 @@ import chevronRight from "../../assets/Icons/chevron_right.svg";
 import fourG from "../../assets/Icons/4g.svg";
 import wifi from "../../assets/Icons/wifi.svg";
 import battery from "../../assets/Icons/battery.svg";
+import headphones from "../../assets/images/headphones.png";
 export default class Header extends Component {
 	state = {
 		activeView: 4,
+		display: true,
 	};
 
 	onBtnClick() {
@@ -25,6 +27,12 @@ export default class Header extends Component {
 		console.log(view);
 		this.setState({
 			activeView: view,
+		});
+	};
+
+	displayNone = () => {
+		this.setState({
+			display: false,
 		});
 	};
 
@@ -46,12 +54,18 @@ export default class Header extends Component {
 					<div className="profile-image"></div>
 					<div className="header-buttons__icon-long">
 						<img src={chevronLeft} alt="" className="header-buttons__icons " />
+						<span className="header-buttons__icon-text ">AUG 20 - AUG 26</span>
 						<img src={chevronRight} alt="" className="header-buttons__icons " />
 					</div>
 
-					<div className="header-buttons__dates">
+					<div
+						onClick={this.displayNone}
+						className={`header-buttons__dates ${
+							this.state.display ? "" : "no-show"
+						}`}
+					>
 						<div>
-							TODAY{" "}
+							TODAY
 							<img
 								className="header-buttons__icon header-buttons__icon--center"
 								src={iconChevronDown}
@@ -60,7 +74,9 @@ export default class Header extends Component {
 						</div>
 					</div>
 					<div>
-						<div className="profile-image2"></div>
+						<div className="profile-image2">
+							<img src={headphones} alt="" />
+						</div>
 					</div>
 				</div>
 				<div className="header-nav">

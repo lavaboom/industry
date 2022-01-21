@@ -11,23 +11,23 @@
 	padding: 0.5rem 0;
 	position: absolute;
 }
-.border-yellow {
+.border-2 {
 	height: 2.5rem;
 	width: 20rem;
 	position: absolute;
-	border-left: solid 2px $color-barchart-yellow;
+	border-left: solid 2px white;
 	top: 32%;
 }
-.border-green {
+.border-1 {
 	height: 2.5rem;
 	width: 20rem;
 	position: absolute;
-	border-left: solid 2px $color-barchart-green;
+	border-left: solid 2px white;
 }
-.border-red {
+.border-3 {
 	height: 2.5rem;
 	width: 20rem;
 	position: absolute;
-	border-left: solid 2px $color-barchart-red;
+	border-left: solid 2px white;
 	top: 59%;
 }

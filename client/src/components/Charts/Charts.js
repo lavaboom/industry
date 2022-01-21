@@ -46,11 +46,10 @@ export default function Charts({ precentage, metric, title, btnText, chartColor 
     const options = {
         plugins: {
             title: {
-                display: false,
-                text: 'Custom Chart Title'
+                display: true,
             }
         },
-        cutout: '80%',
+        cutout: '89%',
     }
 
     return (
@@ -64,7 +63,7 @@ export default function Charts({ precentage, metric, title, btnText, chartColor 
                     <Button containerStyle="doughnut__icon-container" btnStyle="doughnut__icon" text="?" />
                 </div>
                 <p className="doughnut__info-metric">{metric}<span className="doughnut__info-precent">{precentage ? "%" : ""}</span></p>
-                {btnText ? <Button text={btnText} btnStyle={"inactive"} /> : ""}
+                {btnText ? <Button containerStyle="doughnut__button" text={btnText} btnStyle={"inactive"} /> : ""}
             </div>
         </section>
     );

@@ -7,6 +7,7 @@
 	display: flex;
 	justify-content: space-between;
 	background-color: black;
+	margin-bottom: 8rem;
 
 	&-card {
 		width: 33%;
@@ -17,11 +18,11 @@
 		color: white;
 		align-items: center;
 		justify-content: center;
-		background-color: $color-background-1;
+		background-color: #1d1f24;
 		border-top: 3px solid $color-background-1;
 
 		&--selected {
-			background-color: $color-secondary-1;
+			background-color: #393b40;
 			border-top: 3px solid white;
 		}
 
