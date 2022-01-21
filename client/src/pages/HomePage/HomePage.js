@@ -9,6 +9,7 @@ export default class HomePage extends Component {
         return (
             <div>
                 <p>This is Home Page</p>
+                
                 <Charts />
             </div>
         )
