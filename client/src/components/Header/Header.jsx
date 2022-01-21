@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+// app styles & assets
 import './Header.scss'
 import iconCoach from '../../assets/Icons/coach.svg'
 import iconMenu from '../../assets/Icons/menu.svg'
