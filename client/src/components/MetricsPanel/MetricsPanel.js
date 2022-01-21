@@ -21,6 +21,7 @@ export default class MetricsPanel extends Component {
 
 
     return (
+
       <div className='panel'>
         <div
           className={`panel-card ${this.state.activeButton === 1 ? 'panel-card--selected' : ''}`}
@@ -44,11 +45,10 @@ export default class MetricsPanel extends Component {
         >
           <img className='panel-card__icon' src={iconSleep} alt='sleep' />
           <div className='panel-card__desc'>SLEEP</div>
-          <div className='panel-card__metric'>7<span className='panel-card__subtext'>hr</span></div>
+          <div className='panel-card__metric'>7<span className='panel-card__subtext'>Hr</span></div>
         </div>
-        <div className='panel-card__bottom-desc'>
-          <img className='panel-card__dotted' src={iconDotted} alt='line' />
-          <div className='panel-card__bottom-text'>7-Day Average</div>
+        <div className="pannel-average">
+          7-Day Average
         </div>
       </div>
     );
