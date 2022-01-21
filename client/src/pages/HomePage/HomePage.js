@@ -14,7 +14,7 @@ export default class HomePage extends Component {
         return (
             <div className='home-page'>
                 <Charts metric="7.1" title="DAY STRAIN" btnText="No Activities" chartColor="#0072BC" />
-                <MetricsPanel/>
+                {/* <MetricsPanel/> */}
                 <Card icon={logo}
                     header='LIGHT EXERTION'
                     content='Strain between 6 and 9.9 is considered light. Your accumulated cardiovascular load is low.'
