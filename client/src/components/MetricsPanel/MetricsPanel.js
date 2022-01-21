@@ -4,7 +4,7 @@ import './MetricsPanel.scss';
 import iconBrain from '../../assets/Icons/brain.svg'
 import iconStress from '../../assets/Icons/stress.svg'
 import iconSleep from '../../assets/Icons/sleep.svg'
-
+import iconDotted from '../../assets/Icons/dotted.svg'
 
 export default class MetricsPanel extends Component {
 
@@ -44,7 +44,11 @@ export default class MetricsPanel extends Component {
         >
           <img className='panel-card__icon' src={iconSleep} alt='sleep' />
           <div className='panel-card__desc'>SLEEP</div>
-          <div className='panel-card__metric'>7<span className='panel-card__subtext'>hours</span></div>
+          <div className='panel-card__metric'>7<span className='panel-card__subtext'>hr</span></div>
+        </div>
+        <div className='panel-card__bottom-desc'>
+          <img className='panel-card__dotted' src={iconDotted} alt='line' />
+          <div className='panel-card__bottom-text'>7-Day Average</div>
         </div>
       </div>
     );
