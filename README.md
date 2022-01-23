@@ -5,7 +5,7 @@ A demo of the "Cognitive Function" for the WHOOP app. Done in 24 hrs as a hackat
 ## Overview
 This feature is meant for the general public and was designed to help them maximize their cognitive performance in everyday life's tasks.
 
-![Screenshot](https://github.com/lavaboom/industry/blob/main/screenshot.jpg?raw=true)
+![Screenshot](https://github.com/lavaboom/industry/blob/main/screenshot.png?raw=true)
 
 ## Tools used
 File `ItemRoutes.js` contains all 5 sample routes: 
