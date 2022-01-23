@@ -1,17 +1,16 @@
-# Our industry project 
+# WHOOP - Cognitive Function
 
-See below for current structure of the boilerplate code.
+A demo of the "Cognitive Function" for the WHOOP app. Done in 24 hrs as a hackathon exercise.
 
-## Sample data
-Sample data file is `items.json`.
+## Overview
+This feature is meant for the general public and was designed to help them maximize their cognitive performance in everyday life's tasks.
 
-## Backend
+![Screenshot](https://github.com/lavaboom/industry/blob/main/screenshot.jpg?raw=true)
+
+## Tools used
 File `ItemRoutes.js` contains all 5 sample routes: 
-- GET (all)
-- GET (single item)
-- POST (single item)
-- PUT (single item)
-- DELETE (single item)
+- React JS
+- Charts JS
+- SCSS
 
-## Frontend
-React Router set up to use HomePage (`'/'`) and the sample ItemDetails (`'/item/:id'`) page.
+Special thanks to our UX friends who provided us with the Figma mockup.
